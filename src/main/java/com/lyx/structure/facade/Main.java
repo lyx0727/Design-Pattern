@@ -1,5 +1,6 @@
 package com.lyx.structure.facade;
 
+import com.lyx.behavior.visitor.RISCCodeGenerator;
 import com.lyx.structure.decorator.BytecodeStream;
 import com.lyx.structure.decorator.FileStream;
 import com.lyx.structure.decorator.InputStream;

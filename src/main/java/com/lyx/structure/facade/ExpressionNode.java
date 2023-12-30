@@ -1,12 +1,11 @@
 package com.lyx.structure.facade;
 
-public class ExpressionNode extends ProgramNode {
-  @Override
-  public void traverse(CodeGenerator codeGenerator) {
-    codeGenerator.visit(this);
+import com.lyx.behavior.visitor.NodeVisitor;
 
-    for (ProgramNode node : children) {
-      node.traverse(codeGenerator);
-    }
+public class ExpressionNode extends ProgramNode {
+
+  @Override
+  public void accept(NodeVisitor visitor) {
+    visitor.visitExpressionNode(this);
   }
 }

@@ -3,7 +3,9 @@ package com.lyx.structure.facade;
 public class ProgramNodeBuilder {
   private ProgramNode node;
 
-  public ProgramNodeBuilder() {}
+  public ProgramNodeBuilder() {
+    node = new ProgramNode();
+  }
 
   public ProgramNode getRootNode() { return node; }
 
